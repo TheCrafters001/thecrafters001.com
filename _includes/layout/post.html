@@ -1,0 +1,26 @@
+{% include "partial/header.html" %}
+
+    <!--
+            Based on the old phpEasyStep HTML code
+            https://web.archive.org/web/20200216231829/http://www.phpeasystep.com/phptu/12.html
+        -->
+
+    <!-- Page Content -->
+
+    <table>
+
+        {% include "partial/navbar.html" %}
+
+
+        <tr>
+            <td class="content-page" id="content" colspan="6">
+                <h1>{{ title }}</h1>
+                <h3>{{ date }}</h3>
+                <hr>
+                {{ content }}
+            </td>
+        </tr>
+
+
+
+{% include "partial/footer.html" %} 

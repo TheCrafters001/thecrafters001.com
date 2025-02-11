@@ -1,0 +1,48 @@
+/* Based on the old phpEasyStep HTML code.
+   Converted into CSS by me. 
+   https://web.archive.org/web/20200216231829/http://www.phpeasystep.com/phptu/12.html */
+
+   table {
+    width: 90%;
+    border: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30;
+    border-spacing: 1;
+    background-color: #CCCCCC;
+}
+
+.top-bar {
+    width: ;
+    align: center;
+    text-align: center;
+    background-color: #E6E6E6;
+    font-weight: bold;
+}
+
+.content-page {
+    background-color: #FFFFFF;
+    vertical-align: top;
+    text-align: left;
+}
+
+.footer {
+    text-align: right;
+    align: right;
+    background-color: #E6E6E6;
+}
+
+
+/* Mastodon Feed */
+.toots {
+    max-width: 600px !important;
+}
+
+
+/* Mobile */
+
+@media (max-width: 767px) {
+    .hidden-mobile {
+      display: none;
+    }
+}

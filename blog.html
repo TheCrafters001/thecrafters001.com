@@ -1,0 +1,27 @@
+---
+layout: layout/page.html
+title: "Blog"
+pagination:
+  data: collections.post
+  size: 25
+  alias: posts
+  reverse: true
+  generatePageOnEmptyData: true
+permalink: "blog/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber | plus: 1 }}/{% endif %}index.html"
+---
+
+<ul>
+    {%- for post in posts -%}
+    <li><a href="{{ post.url }}">{{ post.data.title }}</a> - {{ post.data.date }}</li>
+    {%- endfor -%}  
+</ul>
+
+<table>
+  <thead>
+    <tr>{%- for pageEntry in pagination.pages %}<td class="top-bar"><a href="{{ pagination.hrefs[ forloop.index0 ] }}"{% if page.url == pagination.hrefs[ forloop.index0 ] %} aria-current="page"{% endif %}>Page {{ forloop.index }}</a></td>{%- endfor %}</tr>
+  </thead>
+</table>
+
+<ol>
+  
+</ol>

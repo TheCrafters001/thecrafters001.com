@@ -1,0 +1,28 @@
+{% include "partial/header.html" %}
+
+    <!--
+            Based on the old phpEasyStep HTML code
+            https://web.archive.org/web/20200216231829/http://www.phpeasystep.com/phptu/12.html
+        -->
+
+    <!-- Page Content -->
+
+    <table>
+
+        {% include "partial/navbar.html" %}
+
+
+        <tr>
+            <td class="content-page" id="content" colspan="5">
+                {{ content }}
+            </td>
+
+            <!-- Mastodon Feed -->
+            <td width="600px" class="content-page hidden-mobile">
+                <a class="mastodon-feed" id="feed" href="https://meow.social/@TheCrafters001" data-exclude-replies="true" data-toot-limit="4">follow me into the Fediverse</a>
+            </td>
+        </tr>
+
+
+
+{% include "partial/footer-hp.html" %}
