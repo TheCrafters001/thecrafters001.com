@@ -3,7 +3,7 @@
    Converted into CSS by me. 
    https://web.archive.org/web/20200216231829/http://www.phpeasystep.com/phptu/12.html */
 
-   table {
+table {
     width: 90%;
     border: 0;
     margin-left: auto;
@@ -14,17 +14,25 @@
 }
 
 .top-bar {
-    width: ;
     align: center;
     text-align: center;
     background-color: #E6E6E6;
     font-weight: bold;
 }
 
+.content-main-size-max {
+    max-width: 1500px !important;
+}
+
 .content-page {
     background-color: #FFFFFF;
     vertical-align: top;
     text-align: left;
+}
+
+.correct-spacing {
+    /*margin: 10px 10px 10px 10px;*/
+    padding: 10px 10px 10px 10px;
 }
 
 .footer {
