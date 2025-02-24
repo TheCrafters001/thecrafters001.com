@@ -1,5 +1,6 @@
 /* Based on the old phpEasyStep HTML code.
    Converted into CSS by me. 
+   Custom CSS may be added as well.
    https://web.archive.org/web/20200216231829/http://www.phpeasystep.com/phptu/12.html */
 
 table {
@@ -30,8 +31,8 @@ table {
 }
 
 .correct-spacing {
-    /*margin: 10px 10px 10px 10px;*/
-    padding: 10px 10px 10px 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .footer {
@@ -54,3 +55,7 @@ table {
       display: none;
     }
 }
+
+/*
+    End style.css
+*/
