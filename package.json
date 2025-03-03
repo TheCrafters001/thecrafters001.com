@@ -1,5 +1,8 @@
 {
     "scripts": {
-      "build": "npx @11ty/eleventy"
+        "build": "npx @11ty/eleventy"
+    },
+    "devDependencies": {
+        "html-minifier-terser": "^7.2.0"
     }
 }
