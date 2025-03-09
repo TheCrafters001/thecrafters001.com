@@ -29,6 +29,7 @@ table {
     background-color: #FFFFFF;
     vertical-align: top;
     text-align: left;
+    line-height: 1.4;
 }
 
 .content-na {
@@ -61,13 +62,15 @@ table {
     }
 }
 
+p {
+    line-height: 1.4;
+}
+
 /*
     End style.css
 */
 
-p {
-    line-height: 1.4;
-}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
