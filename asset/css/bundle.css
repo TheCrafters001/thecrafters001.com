@@ -31,6 +31,10 @@ table {
     text-align: left;
 }
 
+.content-na {
+    background-color: #CCCCCC;
+}
+
 .correct-spacing {
     padding-left: 10px;
     padding-right: 10px;
