@@ -1,0 +1,91 @@
+{% include "partial/header.html" %}
+
+    <!--
+            Based on the old phpEasyStep HTML code
+            https://web.archive.org/web/20200216231829/http://www.phpeasystep.com/phptu/12.html
+        -->
+
+    <!-- Page Content -->
+
+    <table class="content-main-size-max">
+
+        {% include "partial/navbar.html" %}
+
+
+        <tr>
+            <td class="content-page correct-spacing" id="content" colspan="6">
+                <table class="avatar-box">
+                    <tbody>
+                        <!-- Avatar -->
+                        <th class="top-bar">Avatar</th>
+
+                        <tr>
+                            <td class="content-page"><img src="{{ avatar }}" alt="Character Icon" /></td>
+                        </tr>
+                        <tr>
+                            <td class="content-page">Avatar By <a href="{{ avatar-artist-link }}">{{ avatar-artist-name }}</a></td>
+                        </tr>
+
+                        <!-- Species -->
+                        <th class="top-bar">Species</th>
+
+                        <tr>
+                            <td class="content-page">{{ species }}</td>
+                        </tr>
+
+                        {% if toyhouse %}
+                        <!-- Toyhouse -->
+                        <th class="top-bar">ToyHou.se</th>
+
+                        <tr>
+                            <td class="content-page">Want to see more art or find out more? Visit this {{ title }}'s <a href="{{ toyhouse }}" target="_blank">ToyHou.se Page</a>!</td>
+                        </tr>
+                        {% endif %}
+
+                    </tbody>
+                </table>
+
+                <h2>{{ title }}</h2>
+
+                {{ content }}
+
+                {% if refsheet-img %}
+                <table style="max-width: 800px !important;">
+                    <thead>
+                        <th class="top-bar">Reference Sheet</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="content-page"><img src="{{ refsheet-img }}" width="100%" alt="{{ title }}'s Reference Sheet"></td>
+                        </tr>
+                        {% if refsheet-artist %}
+                        <tr>
+                            <td class="content-page">Art By <a href="{{ refsheet-artist-link }}">{{ refsheet-artist }}</a></td>
+                        </tr>
+                        {% endif %}
+                        {% if refsheet-base %}
+                        <tr>
+                            <td class="content-page">Base By <a href="{{ refsheet-base-link }}">{{ refsheet-base }}</a></td>
+                        </tr>
+                        {% endif %}
+                    </tbody>
+                </table>
+                {% else %}
+                <table style="max-width: 800px !important;">
+
+                    <thead>
+                        <th class="top-bar">Reference Sheet</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="content-page">This character doesn't have a reference sheet yet.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                {% endif %}
+            </td>
+        </tr>
+
+
+
+{% include "partial/footer.html" %}

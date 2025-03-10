@@ -20,6 +20,11 @@ table {
     font-weight: bold;
 }
 
+.avatar-box {
+    float: right;
+    max-width: 150px !important;
+}
+
 .content-main-size-max {
     max-width: 1500px !important;
 }
