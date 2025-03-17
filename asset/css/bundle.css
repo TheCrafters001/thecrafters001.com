@@ -52,6 +52,10 @@ table {
     background-color: #E6E6E6;
 }
 
+body {
+    padding-top: 35px;
+}
+
 
 /* Mastodon Feed */
 .toots {
