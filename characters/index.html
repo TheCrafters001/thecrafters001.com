@@ -6,7 +6,6 @@ pagination:
   data: collections.character
   size: 25
   alias: character
-  reverse: true
   generatePageOnEmptyData: true
 
 permalink: "characters/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber | plus: 1 }}/{% endif %}index.html"
