@@ -9,6 +9,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("asset/img")
     eleventyConfig.addPassthroughCopy("asset/art")
     eleventyConfig.addPassthroughCopy("CNAME")
+	eleventyConfig.addPassthroughCopy("robots.txt")
 
     // Minify
     eleventyConfig.addTransform("htmlmin", function (content) {
