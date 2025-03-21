@@ -2,6 +2,11 @@
 layout: layout/page.html
 title: "Software"
 permalink: "software/index.html"
+
+pagination:
+  data: collections.software
+  size: 9999
+  alias: software
 ---
 
 <p>
@@ -24,28 +29,27 @@ permalink: "software/index.html"
     </thead>
     <tbody>
 
-        <!-- ETB -->
-        <tr>
-            <td class="content-page">Essentials Team Builder (ETB)</td>
-            <td class="content-page"><a href="/software/etb/">/software/etb/</a></td>
-            <td class="content-page">This tool is designed to help make the development of Pokémon fan-games easier, by providing an easy-to-use GUI.</td>
-            <td class="content-page">{% include "sc/support/man.html" %}</td>
-        </tr>
 
-        <!-- PFQDA -->
+        {%- for software in software -%}
         <tr>
-            <td class="content-page">Pok&eacute;Farm Q Desktop App (PFQDA)</td>
-            <td class="content-page"><a href="/software/pfqda/">/software/pfqda/</a></td>
-            <td class="content-page">A very crude desktop app.</td>
+            <td class="content-page">{{ software.data.title }}</td>
+            <td class="content-page"><a href="{{ software.url }}">{{ software.url }}</a></td>
+            {% if software.data.description %}
+            <td class="content-page">{{ software.data.description }}</td>
+            {% else %}
+            <td class="content-na"></td>
+            {% endif %}
+            {% if software.data.supported == "full" %}
+            <td class="content-page">{% include "sc/support/yes.html" %}</td>
+            {% elsif software.data.supported == "man" %}
             <td class="content-page">{% include "sc/support/man.html" %}</td>
-        </tr>
-
-        <!-- Move Generator -->
-        <tr>
-            <td class="content-page">Move Generator</td>
-            <td class="content-page"><a href="/software/move-generator/">/software/move-generator/</a></td>
-            <td class="content-page">Create your own moves for Pokemon Essentials!</td>
+            {% elsif software.data.supported == "vul" %}
+            <td class="content-page">{% include "sc/support/vul.html" %}</td>
+            {% else %}
             <td class="content-page">{% include "sc/support/no.html" %}</td>
+            {% endif %}
         </tr>
+        {%- endfor -%}
+
     </tbody>
 </table>
