@@ -12,7 +12,7 @@ permalink: "blog/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber
 
 <ul>
     {%- for post in posts -%}
-    <li><a href="{{ post.url }}">{{ post.data.title }}</a> - {{ post.data.date }}</li>
+    <li><a href="{{ post.url }}">{{ post.data.title }}</a> - {{ post.data.date | readablePostDate }}</li>
     {% if post.data.description %}
     <ul>
       <li>{{ post.data.description }}</li>

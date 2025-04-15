@@ -4,5 +4,8 @@
     },
     "devDependencies": {
         "html-minifier-terser": "^7.2.0"
+    },
+    "dependencies": {
+        "luxon": "^3.6.1"
     }
 }
