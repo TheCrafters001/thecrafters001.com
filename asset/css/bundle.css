@@ -56,6 +56,10 @@ body {
     padding-top: 35px;
 }
 
+.news {
+    background-color: #bcffff;
+}
+
 
 /* Mastodon Feed */
 .toots {
