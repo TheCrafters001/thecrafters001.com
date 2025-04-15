@@ -11,7 +11,7 @@ permalink: "blog/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber
 ---
 <h3>Blog</h3>
 
-<table style="max-width: 800px !important;">
+<table style="max-width: 1000px !important;">
   <thead>
       <th class="top-bar">Post Title</th>
       <th class="top-bar">Post Date</th>
@@ -36,7 +36,7 @@ permalink: "blog/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber
   </tbody>
 </table>
 
-<table  style="max-width: 800px !important;">
+<table  style="max-width: 1000px !important;">
   <thead><tr class="footer">{%- for pageEntry in pagination.pages %}<td class="top-bar"><a href="{{ pagination.hrefs[ forloop.index0 ] }}"{% if page.url == pagination.hrefs[ forloop.index0 ] %} aria-current="page"{% endif %}>Page {{ forloop.index }}</a></td>{%- endfor %}</tr></thead>
 </table>
 
