@@ -9,23 +9,35 @@ pagination:
   generatePageOnEmptyData: true
 permalink: "blog/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber | plus: 1 }}/{% endif %}index.html"
 ---
+<h3>Blog</h3>
 
-<ul>
-    {%- for post in posts -%}
-    <li><a href="{{ post.url }}">{{ post.data.title }}</a> - {{ post.data.date | readablePostDate }}</li>
-    {% if post.data.description %}
-    <ul>
-      <li>{{ post.data.description }}</li>
-    </ul>
-    {% endif %}
-    <br>
-    {%- endfor -%}  
-</ul>
-
-<table>
+<table style="max-width: 800px !important;">
   <thead>
-    <tr>{%- for pageEntry in pagination.pages %}<td class="top-bar"><a href="{{ pagination.hrefs[ forloop.index0 ] }}"{% if page.url == pagination.hrefs[ forloop.index0 ] %} aria-current="page"{% endif %}>Page {{ forloop.index }}</a></td>{%- endfor %}</tr>
+      <th class="top-bar">Post Title</th>
+      <th class="top-bar">Post Date</th>
+      <th class="top-bar">Post Link</th>
+      <th class="top-bar">Description</th>
   </thead>
+  <tbody>
+
+      {%- for post in posts -%}
+      <tr>
+          <td class="content-page">{{ post.data.title }}</td>
+          <td class="content-page">{{ post.data.date  | readablePostDate }}</td>
+          <td class="content-page"><a href="{{ post.url }}">{{ post.url }}</a></td>
+          {% if post.data.description %}
+          <td class="content-page">{{ post.data.description }}</td>
+          {% else %}
+          <td class="content-na"></td>
+          {% endif %}
+      </tr>
+      {%- endfor -%}
+
+  </tbody>
+</table>
+
+<table  style="max-width: 800px !important;">
+  <thead><tr class="footer">{%- for pageEntry in pagination.pages %}<td class="top-bar"><a href="{{ pagination.hrefs[ forloop.index0 ] }}"{% if page.url == pagination.hrefs[ forloop.index0 ] %} aria-current="page"{% endif %}>Page {{ forloop.index }}</a></td>{%- endfor %}</tr></thead>
 </table>
 
 <ol>
