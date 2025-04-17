@@ -63,6 +63,7 @@ body {
 /* Mastodon Feed */
 .toots {
     max-width: 600px !important;
+    width: 600px !important;
 }
 
 
