@@ -1,5 +1,5 @@
 {% include "partial/header.html" %}
-
+    
     <!--
             Based on the old phpEasyStep HTML code
             https://web.archive.org/web/20200216231829/http://www.phpeasystep.com/phptu/12.html
@@ -19,10 +19,32 @@
 
             <!-- Mastodon Feed -->
             <td class="content-page hidden-mobile toots">
-                <a class="mastodon-feed" id="feed" href="https://meow.social/@TheCrafters001" data-exclude-replies="true" data-toot-limit="4">follow me into the Fediverse</a>
+                <div id="mt-container" class="mt-container">
+                    <div class="mt-body" role="feed">
+                      <div class="mt-loading-spinner"></div>
+                    </div>
+                </div>                  
             </td>
         </tr>
 
+        <!-- Mastodon Feed CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@idotj/mastodon-embed-timeline@4.7.0/dist/mastodon-timeline.min.css" integrity="sha256-Qi3H+bdH6RuMuyR1trAlG5bMWJGl9y3jPiTc1PWQFpI=" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@idotj/mastodon-embed-timeline@4.7.0/dist/mastodon-timeline.umd.js" integrity="sha256-p6Xvd6OVSoasRG8M7ct20nnzGdnFMVapWyp9PGpW2Uo=" crossorigin="anonymous"></script>
+
+        <script>
+            const myTimeline = new MastodonTimeline.Init({
+                instanceUrl: "https://meow.social",
+                timelineType: "profile",
+                userId: "111968625768182094",
+                profileName: "@TheCrafters001",
+                hideReblog: true,
+                hideReplies: true,
+                hidePinnedPosts: true,
+                maxNbPostShow: "4",
+                maxNbPostFetch: "4",
+            });
+
+        </script>
 
 
 {% include "partial/footer-hp.html" %}
