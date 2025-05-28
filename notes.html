@@ -1,24 +1,24 @@
 ---
 layout: layout/page.html
-title: "Blog"
+title: "Notes"
 pagination:
   data: collections.post
   size: 25
   alias: posts
   reverse: true
   generatePageOnEmptyData: true
-permalink: "blog/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber | plus: 1 }}/{% endif %}index.html"
+permalink: "notes/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber | plus: 1 }}/{% endif %}index.html"
 ---
-<h3>Blog</h3>
+<h3>Notes</h3>
 
-<p>Sometimes these are more blog-ish kinda posts, other times it is just something short. It is just something I wanted to write down and share here.</p>
+<p>I write things!</p>
 
 <table style="max-width: 1000px !important;">
   <thead>
       <tr>
-        <th class="top-bar">Post Title</th>
-        <th class="top-bar">Post Date</th>
-        <th class="top-bar">Post Link</th>
+        <th class="top-bar">Note Title</th>
+        <th class="top-bar">Note Date</th>
+        <th class="top-bar">Note Link</th>
         <th class="top-bar">Description</th>
       </tr>
   </thead>
