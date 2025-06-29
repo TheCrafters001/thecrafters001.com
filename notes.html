@@ -9,8 +9,6 @@ pagination:
   generatePageOnEmptyData: true
 permalink: "notes/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber | plus: 1 }}/{% endif %}index.html"
 ---
-<h3>Notes</h3>
-
 <p>I write things!</p>
 
 <table style="max-width: 1000px !important;">
@@ -44,6 +42,17 @@ permalink: "notes/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumbe
   <thead><tr class="footer">{%- for pageEntry in pagination.pages %}<td class="top-bar"><a href="{{ pagination.hrefs[ forloop.index0 ] }}"{% if page.url == pagination.hrefs[ forloop.index0 ] %} aria-current="page"{% endif %}>Page {{ forloop.index }}</a></td>{%- endfor %}</tr></thead>
 </table>
 
-<ol>
-  
-</ol>
+<table style="max-width: 700px !important; margin-top: 15px; margin-bottom: 15px;">
+    <thead>
+        <tr>
+            <th class="top-bar">RSS Feed</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="content-page">
+                <a href="/notes/feed.xml"><button style="width: 100%;">Click to access RSS Feed</button></a>
+            </td>
+        </tr>
+    </tbody>
+</table>
