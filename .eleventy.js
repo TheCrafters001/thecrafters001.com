@@ -17,6 +17,13 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("CNAME")
 	eleventyConfig.addPassthroughCopy("robots.txt")
 
+	// Modified version of https://bnijenhuis.nl/notes/dates-in-eleventy/
+	eleventyConfig.addFilter("readablePostDate", (dateObj) => {
+		return DateTime.fromJSDate(dateObj, {
+			zone: "America/New_York",
+		}).setLocale('en').toLocaleString(DateTime.DATETIME_FULL);
+	});
+
 	// Shortcode
 	// Credit: https://www.aleksandrhovhannisyan.com/blog/custom-markdown-components-in-11ty/
 
@@ -43,14 +50,6 @@ module.exports = function(eleventyConfig) {
 		// If not an HTML output, return content as-is
 		return content;
 	});
-
-	// Modified version of https://bnijenhuis.nl/notes/dates-in-eleventy/
-	eleventyConfig.addFilter("readablePostDate", (dateObj) => {
-		return DateTime.fromJSDate(dateObj, {
-			zone: "America/New_York",
-		}).setLocale('en').toLocaleString(DateTime.DATETIME_FULL);
-	});
-
 
 	// RSS
 	eleventyConfig.addPlugin(feedPlugin, {
