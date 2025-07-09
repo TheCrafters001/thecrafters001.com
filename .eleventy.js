@@ -17,6 +17,17 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("CNAME")
 	eleventyConfig.addPassthroughCopy("robots.txt")
 
+	// Shortcode
+	// Credit: https://www.aleksandrhovhannisyan.com/blog/custom-markdown-components-in-11ty/
+
+	// Blockquote
+    eleventyConfig.addPairedShortcode('quote', (text) => `<blockquote class="quote">${text}</blockquote>`);
+
+	// Blockquote Alert
+    eleventyConfig.addPairedShortcode('quotewarning', (text) => `<blockquote class="quote warning">${text}</blockquote>`);
+
+	// End Shortcode
+
     // Minify
     eleventyConfig.addTransform("htmlmin", function (content) {
 		if ((this.page.outputPath || "").endsWith(".html")) {
