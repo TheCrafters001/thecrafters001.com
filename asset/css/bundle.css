@@ -26,6 +26,19 @@ table {
     max-width: 150px !important;
 }
 
+.quote {
+    font-style: italic;
+    font-size: 12px;
+    background-color: #c3c3c3;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+code {
+  background-color: #a0a0a0;
+  padding: 3px 5px 3px 5px;
+}
+
 .content-main-size-max {
     max-width: 1500px !important;
 }
@@ -57,10 +70,20 @@ body {
     padding-bottom: 35px;
 }
 
+
+/* Alert Colors */
 .news {
     background-color: #bcffff;
 }
-
+.info {
+    background-color: #90CAF9;
+}
+.alert {
+    background-color: #EF9A9A;
+}
+.warning {
+    background-color: #FFF59D;
+}
 
 /* Mastodon Feed */
 .toots {
