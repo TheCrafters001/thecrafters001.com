@@ -67,6 +67,19 @@ code {
 body {
     padding-top: 35px;
     padding-bottom: 35px;
+
+    /* I copied the font-family code from https://firealpaca.com/en/get/. unsure if it will work all that great */
+
+    font-family: "メイリオ",
+                "ＭＳ Ｐゴシック",
+                "Meiryo",
+                "ヒラギノ角ゴ Pro W3",
+                "Hiragino Kaku Gothic Pro",
+                Osaka,
+                verdana,
+                arial,
+                clean,
+                sans-serif;
 }
 
 
