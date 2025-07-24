@@ -18,11 +18,35 @@ table {
     text-align: center;
     background-color: #E6E6E6;
     font-weight: bold;
+    color: #3c3c3c;
 }
 
-.avatar-box {
-    float: right;
-    max-width: 150px !important;
+.top-bar a {
+    color: #0000EE;
+    text-decoration: underline;
+}
+
+.sub-content-page a {
+    color: #c5c5ff;
+    text-decoration: underline;
+}
+
+a {
+    color: #7A7AFF;
+    text-decoration: underline;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 12px;
+    background-color: #c3c3c3;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+code {
+  background-color: #a0a0a0;
+  padding: 3px 5px 3px 5px;
 }
 
 .content-main-size-max {
@@ -30,14 +54,22 @@ table {
 }
 
 .content-page {
-    background-color: #FFFFFF;
+    background-color: #3c3c3c;
+    color: #ffffff;
+    vertical-align: top;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.sub-content-page {
+    background-color: #585858;
     vertical-align: top;
     text-align: left;
     line-height: 1.4;
 }
 
 .content-na {
-    background-color: #CCCCCC;
+    background-color: #363636;
 }
 
 .correct-spacing {
@@ -53,12 +85,42 @@ table {
 
 body {
     padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: #000000;
+    background-image: url("/asset/img/silver-scales.png");
+
+    /* I copied the font-family code from https://firealpaca.com/en/get/. unsure if it will work all that great */
+
+    font-family: "メイリオ",
+                "ＭＳ Ｐゴシック",
+                "Meiryo",
+                "ヒラギノ角ゴ Pro W3",
+                "Hiragino Kaku Gothic Pro",
+                Osaka,
+                verdana,
+                arial,
+                clean,
+                sans-serif;
 }
 
+
+/* Alert Colors */
 .news {
     background-color: #bcffff;
+    color: #3c3c3c;
 }
-
+.info {
+    background-color: #90CAF9;
+    color: #3c3c3c;
+}
+.alert {
+    background-color: #EF9A9A;
+    color: #3c3c3c;
+}
+.warning {
+    background-color: #FFF59D;
+    color: #3c3c3c;
+}
 
 /* Mastodon Feed */
 .toots {

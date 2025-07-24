@@ -24,11 +24,11 @@ permalink: "blog/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber
 
       {%- for post in posts -%}
       <tr>
-          <td class="content-page">{{ post.data.title }}</td>
-          <td class="content-page">{{ post.data.date  | readablePostDate }}</td>
-          <td class="content-page"><a href="{{ post.url }}">{{ post.url }}</a></td>
+          <td class="sub-content-page">{{ post.data.title }}</td>
+          <td class="sub-content-page">{{ post.data.date  | readablePostDate }}</td>
+          <td class="sub-content-page"><a href="{{ post.url }}">{{ post.url }}</a></td>
           {% if post.data.description %}
-          <td class="content-page">{{ post.data.description }}</td>
+          <td class="sub-content-page">{{ post.data.description }}</td>
           {% else %}
           <td class="content-na"></td>
           {% endif %}
