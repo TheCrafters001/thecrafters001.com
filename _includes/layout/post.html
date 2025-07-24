@@ -44,6 +44,22 @@
                         crossorigin="anonymous"
                         async>
                 </script>
+                <noscript>
+                    <table style="max-width: 700px !important; margin-top: 15px;">
+                        <thead>
+                            <tr>
+                                <th class="top-bar">No script detected!</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="content-page">
+                                    It looks like your browser is reporting that you have java-script disabled. I don't want to bother you to turn it on, but javascript is used to show comments. If you want to see comments, feel free to turn it on, I won't force you though!
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </noscript>
             </td>
         </tr>
         {% else %}
@@ -52,7 +68,20 @@
         </tr>
         <tr>
             <td class="content-page correct-spacing" colspan="6">
-                <p>Comments have been disabled on this post.</p>
+                <table style="max-width: 700px !important; margin-top: 15px;">
+                    <thead>
+                        <tr>
+                            <th class="top-bar">Comments disabled</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="content-page">
+                                Comments have been disabled on this post.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </td>
         </tr>
         {% endif %}

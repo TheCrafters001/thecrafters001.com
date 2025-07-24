@@ -1,22 +1,22 @@
 ---
 layout: layout/page.html
-title: "Blog"
+title: "Notes"
 pagination:
   data: collections.post
   size: 25
   alias: posts
   reverse: true
   generatePageOnEmptyData: true
-permalink: "blog/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber | plus: 1 }}/{% endif %}index.html"
+permalink: "notes/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber | plus: 1 }}/{% endif %}index.html"
 ---
-<h3>Blog</h3>
+<p>I write things!</p>
 
 <table style="max-width: 1000px !important;">
   <thead>
       <tr>
-        <th class="top-bar">Post Title</th>
-        <th class="top-bar">Post Date</th>
-        <th class="top-bar">Post Link</th>
+        <th class="top-bar">Note Title</th>
+        <th class="top-bar">Note Date</th>
+        <th class="top-bar">Note Link</th>
         <th class="top-bar">Description</th>
       </tr>
   </thead>
@@ -42,6 +42,17 @@ permalink: "blog/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber
   <thead><tr class="footer">{%- for pageEntry in pagination.pages %}<td class="top-bar"><a href="{{ pagination.hrefs[ forloop.index0 ] }}"{% if page.url == pagination.hrefs[ forloop.index0 ] %} aria-current="page"{% endif %}>Page {{ forloop.index }}</a></td>{%- endfor %}</tr></thead>
 </table>
 
-<ol>
-  
-</ol>
+<table style="max-width: 700px !important; margin-top: 15px; margin-bottom: 15px;">
+    <thead>
+        <tr>
+            <th class="top-bar">RSS Feed</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="content-page">
+                <a href="/notes/feed.xml"><button style="width: 100%;">Click to access RSS Feed</button></a>
+            </td>
+        </tr>
+    </tbody>
+</table>
