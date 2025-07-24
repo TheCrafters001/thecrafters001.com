@@ -19,11 +19,22 @@ table {
     text-align: center;
     background-color: #E6E6E6;
     font-weight: bold;
+    color: #3c3c3c;
 }
 
-.avatar-box {
-    float: right;
-    max-width: 150px !important;
+.top-bar a {
+    color: #0000EE;
+    text-decoration: underline;
+}
+
+.sub-content-page a {
+    color: #c5c5ff;
+    text-decoration: underline;
+}
+
+a {
+    color: #7A7AFF;
+    text-decoration: underline;
 }
 
 .quote {
@@ -44,14 +55,22 @@ code {
 }
 
 .content-page {
-    background-color: #FFFFFF;
+    background-color: #3c3c3c;
+    color: #ffffff;
+    vertical-align: top;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.sub-content-page {
+    background-color: #585858;
     vertical-align: top;
     text-align: left;
     line-height: 1.4;
 }
 
 .content-na {
-    background-color: #CCCCCC;
+    background-color: #363636;
 }
 
 .correct-spacing {
@@ -68,6 +87,8 @@ code {
 body {
     padding-top: 35px;
     padding-bottom: 35px;
+    background-color: #000000;
+    background-image: url("/asset/img/silver-scales.png");
 
     /* I copied the font-family code from https://firealpaca.com/en/get/. unsure if it will work all that great */
 
@@ -87,15 +108,19 @@ body {
 /* Alert Colors */
 .news {
     background-color: #bcffff;
+    color: #3c3c3c;
 }
 .info {
     background-color: #90CAF9;
+    color: #3c3c3c;
 }
 .alert {
     background-color: #EF9A9A;
+    color: #3c3c3c;
 }
 .warning {
     background-color: #FFF59D;
+    color: #3c3c3c;
 }
 
 /* Mastodon Feed */
@@ -121,6 +146,24 @@ p {
     End style.css
 */
 
+
+/* 
+    Dark-Mode CSS
+*/
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #323232;
+    }
+
+    p, h1, h2, h3, h4, h5, h6  {
+        color: #FFFFFF;
+    }
+    
+    .content-page {
+        background-color: #525252;
+    }
+}
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
