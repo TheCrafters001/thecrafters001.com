@@ -8,13 +8,13 @@ const { DateTime } = require("luxon");
 const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
 
 // Config
-module.exports = function(eleventyConfig) {
-    // Passthrough
-    eleventyConfig.addPassthroughCopy("bundle.css");
-    eleventyConfig.addPassthroughCopy("ico")
-    eleventyConfig.addPassthroughCopy("asset/img")
-    eleventyConfig.addPassthroughCopy("asset/art")
-    eleventyConfig.addPassthroughCopy("CNAME")
+module.exports = function (eleventyConfig) {
+	// Passthrough
+	eleventyConfig.addPassthroughCopy("bundle.css");
+	eleventyConfig.addPassthroughCopy("ico")
+	eleventyConfig.addPassthroughCopy("asset/img")
+	eleventyConfig.addPassthroughCopy("asset/art")
+	eleventyConfig.addPassthroughCopy("CNAME")
 	eleventyConfig.addPassthroughCopy("robots.txt")
 
 	// Modified version of https://bnijenhuis.nl/notes/dates-in-eleventy/
@@ -28,15 +28,15 @@ module.exports = function(eleventyConfig) {
 	// Credit: https://www.aleksandrhovhannisyan.com/blog/custom-markdown-components-in-11ty/
 
 	// Blockquote
-    eleventyConfig.addPairedShortcode('quote', (text) => `<blockquote class="quote">${text}</blockquote>`);
+	eleventyConfig.addPairedShortcode('quote', (text) => `<blockquote class="quote">${text}</blockquote>`);
 
 	// Blockquote Alert
-    eleventyConfig.addPairedShortcode('quotewarning', (text) => `<blockquote class="quote warning">${text}</blockquote>`);
+	eleventyConfig.addPairedShortcode('quotewarning', (text) => `<blockquote class="quote warning">${text}</blockquote>`);
 
 	// End Shortcode
 
-    // Minify
-    eleventyConfig.addTransform("htmlmin", function (content) {
+	// Minify
+	eleventyConfig.addTransform("htmlmin", function (content) {
 		if ((this.page.outputPath || "").endsWith(".html")) {
 			let minified = htmlmin.minify(content, {
 				useShortDoctype: true,
