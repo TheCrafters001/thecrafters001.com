@@ -15,7 +15,6 @@ table {
 }
 
 .top-bar {
-    align: center;
     text-align: center;
     background-color: #E6E6E6;
     font-weight: bold;
@@ -80,7 +79,6 @@ code {
 
 .footer {
     text-align: right;
-    align: right;
     background-color: #E6E6E6;
 }
 
@@ -146,24 +144,6 @@ p {
     End style.css
 */
 
-
-/* 
-    Dark-Mode CSS
-*/
-
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #323232;
-    }
-
-    p, h1, h2, h3, h4, h5, h6  {
-        color: #FFFFFF;
-    }
-    
-    .content-page {
-        background-color: #525252;
-    }
-}
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
