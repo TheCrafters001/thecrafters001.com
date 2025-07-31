@@ -14,7 +14,6 @@ table {
 }
 
 .top-bar {
-    align: center;
     text-align: center;
     background-color: #E6E6E6;
     font-weight: bold;
@@ -79,7 +78,6 @@ code {
 
 .footer {
     text-align: right;
-    align: right;
     background-color: #E6E6E6;
 }
 
