@@ -19,33 +19,12 @@
 
             <!-- Mastodon Feed -->
             <td class="content-page hidden-mobile toots">
-                <div id="mt-container" class="mt-container">
-                    <div class="mt-body" role="feed">
-                      <div class="mt-loading-spinner"></div>
-                    </div>
-                </div>                  
+                <iframe src="https://booping.synth.download/embed/user-timeline/aabi902gtyh000dj?maxHeight=700&width=600&colorMode=dark" data-misskey-embed-id="v1_bb33147b-cefb-427f-82c2-b3f684ba8ce9" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" style="border: none; width: 100%; max-width: 500px; height: 700px; color-scheme: light dark;"></iframe>
             </td>
         </tr>
 
-        <!-- Mastodon Feed CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@idotj/mastodon-embed-timeline@4.7.0/dist/mastodon-timeline.min.css" integrity="sha256-Qi3H+bdH6RuMuyR1trAlG5bMWJGl9y3jPiTc1PWQFpI=" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/@idotj/mastodon-embed-timeline@4.7.0/dist/mastodon-timeline.umd.js" integrity="sha256-p6Xvd6OVSoasRG8M7ct20nnzGdnFMVapWyp9PGpW2Uo=" crossorigin="anonymous"></script>
-
-        <script>
-            const myTimeline = new MastodonTimeline.Init({
-                instanceUrl: "https://meow.social",
-                timelineType: "profile",
-                userId: "111968625768182094",
-                profileName: "@TheCrafters001",
-                hideReblog: true,
-                hideReplies: true,
-                hidePinnedPosts: true,
-                maxNbPostShow: "4",
-                maxNbPostFetch: "4",
-                btnSeeMore: "See more posts at Meow",
-            });
-
-        </script>
+        <!-- Synth Feed embed -->
+        <script defer src="https://booping.synth.download/embed.js"></script>
 
 
 {% include "partial/footer-hp.html" %}
