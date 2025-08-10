@@ -123,8 +123,8 @@ body {
 
 /* Mastodon Feed */
 .toots {
-    max-width: 600px !important;
-    width: 600px !important;
+    max-width: 500px !important;
+    width: 500px !important;
 }
 
 
