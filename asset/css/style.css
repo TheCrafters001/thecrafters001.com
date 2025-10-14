@@ -9,13 +9,13 @@ table {
     margin-left: auto;
     margin-right: auto;
     padding: 30;
-    border-spacing: 1;
-    background-color: #CCCCCC;
-    border-color: #35393b;
+    border: 2px solid #858585; /*35393b*/ 
+    border-collapse: collapse;
+
 }
 
-tr, td, thead, tbody {
-    border-color: #35393b !important;
+tr, td, th, thead, tbody {
+    border: 2px solid #858585; /*35393b*/ 
 }
 
 .top-bar {

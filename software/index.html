@@ -34,21 +34,21 @@ pagination:
 
         {%- for software in software -%}
         <tr>
-            <td class="content-page">{{ software.data.title }}</td>
-            <td class="content-page"><a href="{{ software.url }}">{{ software.url }}</a></td>
+            <td class="sub-content-page">{{ software.data.title }}</td>
+            <td class="sub-content-page"><a href="{{ software.url }}">{{ software.url }}</a></td>
             {% if software.data.description %}
-            <td class="content-page">{{ software.data.description }}</td>
+            <td class="sub-content-page">{{ software.data.description }}</td>
             {% else %}
             <td class="content-na"></td>
             {% endif %}
             {% if software.data.supported == "full" %}
-            <td class="content-page">{% include "sc/support/yes.html" %}</td>
+            <td class="sub-content-page">{% include "sc/support/yes.html" %}</td>
             {% elsif software.data.supported == "man" %}
-            <td class="content-page">{% include "sc/support/man.html" %}</td>
+            <td class="sub-content-page">{% include "sc/support/man.html" %}</td>
             {% elsif software.data.supported == "vul" %}
-            <td class="content-page">{% include "sc/support/vul.html" %}</td>
+            <td class="sub-content-page">{% include "sc/support/vul.html" %}</td>
             {% else %}
-            <td class="content-page">{% include "sc/support/no.html" %}</td>
+            <td class="sub-content-page">{% include "sc/support/no.html" %}</td>
             {% endif %}
         </tr>
         {%- endfor -%}
