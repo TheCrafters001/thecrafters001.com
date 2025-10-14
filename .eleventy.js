@@ -11,11 +11,11 @@ const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
 module.exports = function (eleventyConfig) {
 	// Passthrough
 	eleventyConfig.addPassthroughCopy("bundle.css");
-	eleventyConfig.addPassthroughCopy("ico")
-	eleventyConfig.addPassthroughCopy("asset/img")
-	eleventyConfig.addPassthroughCopy("asset/art")
-	eleventyConfig.addPassthroughCopy("CNAME")
-	eleventyConfig.addPassthroughCopy("robots.txt")
+	eleventyConfig.addPassthroughCopy("ico");
+	eleventyConfig.addPassthroughCopy("asset/img");
+	eleventyConfig.addPassthroughCopy("asset/art");
+	eleventyConfig.addPassthroughCopy("CNAME");
+	eleventyConfig.addPassthroughCopy("robots.txt");
 
 	// Modified version of https://bnijenhuis.nl/notes/dates-in-eleventy/
 	eleventyConfig.addFilter("readablePostDate", (dateObj) => {
