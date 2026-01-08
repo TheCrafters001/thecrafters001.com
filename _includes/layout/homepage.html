@@ -17,14 +17,13 @@
                 {{ content }}
             </td>
 
-            <!-- Mastodon Feed -->
+            <!-- Mastodon Feeds -->
             <td class="content-page hidden-mobile toots">
-                <iframe src="https://booping.synth.download/embed/user-timeline/aabi902gtyh000dj?maxHeight=700&width=600&colorMode=dark" data-misskey-embed-id="v1_bb33147b-cefb-427f-82c2-b3f684ba8ce9" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" style="border: none; width: 100%; max-width: 500px; height: 700px; color-scheme: light dark;"></iframe>
+                <iframe src="/frames/booping.html" scrolling="no" style="border: none; width: 100%; max-width: 500px; height: 710px; overflow: hidden;" name="social"></iframe>
+                
+                <div style="text-align: center;"><p><a href="/frames/booping.html" target="social"><button>Booping</button></a> <a href="/frames/donphan.html" target="social"><button>Donphan</button></a> <a href="/frames/transfur.html" target="social"><button>Transfur</button></a> </p></div>
             </td>
         </tr>
-
-        <!-- Synth Feed embed -->
-        <script defer src="https://booping.synth.download/embed.js"></script>
 
 
 {% include "partial/footer-hp.html" %}
