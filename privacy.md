@@ -33,7 +33,7 @@ GoatCounter is a public facing, open-source analytics platform that promises no 
 All the data displayed on the listed website above is all the data I have. All data is anonymized. All data past 31 days of age is deleted. You may view the GoatCounter Privacy Policy here: [https://www.goatcounter.com/help/privacy](https://www.goatcounter.com/help/privacy)
 
 #### Registered Users Only
-There is an exception for those using my private services/any user registered to `thecrafters001.com`'s services. We will store all information provided that is required for the functionality of the service, such as a username and password, as well as any addition or optional information the registered user provides the server, such as an email address or connections to third party services.
+There is an exception for those using my private services/any user registered to <code class="language-markup">thecrafters001.com</code>'s services. We will store all information provided that is required for the functionality of the service, such as a username and password, as well as any addition or optional information the registered user provides the server, such as an email address or connections to third party services.
 
 The services I provide try to follow the [GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation) (General Data Protection Regulation) for storing and managing personal data, and allow for complete deletion of all personal data you provide to me, should you be a registered user, whenever possible.
 
