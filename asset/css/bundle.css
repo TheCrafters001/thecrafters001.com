@@ -45,6 +45,7 @@ a {
     font-style: italic;
     font-size: 12px;
     background-color: #c3c3c3;
+    color: #000000;
     padding: 10px;
     border-radius: 3px;
 }
@@ -117,6 +118,9 @@ body {
 /* Alert Colors */
 .news {
     background-color: #bcffff;
+    color: #3c3c3c;
+}
+.news a {
     color: #3c3c3c;
 }
 .info {
