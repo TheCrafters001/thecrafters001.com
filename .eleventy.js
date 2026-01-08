@@ -14,6 +14,8 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("ico");
 	eleventyConfig.addPassthroughCopy("asset/img");
 	eleventyConfig.addPassthroughCopy("asset/art");
+	eleventyConfig.addPassthroughCopy("asset/js/prism.js");
+	eleventyConfig.addPassthroughCopy("asset/css/prism.css");
 	eleventyConfig.addPassthroughCopy("CNAME");
 	eleventyConfig.addPassthroughCopy("robots.txt");
 
