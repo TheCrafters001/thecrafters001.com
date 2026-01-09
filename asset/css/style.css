@@ -96,8 +96,7 @@ code {
 body {
     padding-top: 35px;
     padding-bottom: 35px;
-    background-color: #000000;
-    background-image: url("/asset/img/silver-scales.png");
+    background-color: #292929;
 
     /* I copied the font-family code from https://firealpaca.com/en/get/. unsure if it will work all that great */
 
