@@ -2,6 +2,7 @@
 title: New Notes Links
 description: Just a little updates on my notes page.
 date: 2025-07-31T23:05:05.743Z
+lastmod: 2026-01-08T06:43:46.773Z
 tags:
     - post
 layout: "layout/post.html"

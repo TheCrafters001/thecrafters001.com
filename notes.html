@@ -3,7 +3,7 @@ layout: layout/page.html
 title: "Notes"
 pagination:
   data: collections.post
-  size: 25
+  size: 15
   alias: posts
   reverse: true
   generatePageOnEmptyData: true
@@ -16,17 +16,15 @@ permalink: "notes/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumbe
       <tr>
         <th class="top-bar">Note Title</th>
         <th class="top-bar">Note Date</th>
-        <th class="top-bar">Note Link</th>
-        <th class="top-bar">Description</th>
+        <th class="top-bar" width="30%">Description</th>
       </tr>
   </thead>
   <tbody>
 
       {%- for post in posts -%}
       <tr>
-          <td class="sub-content-page">{{ post.data.title }}</td>
-          <td class="sub-content-page">{{ post.data.date  | readablePostDate }}</td>
-          <td class="sub-content-page"><a href="{{ post.url }}">{{ post.url }}</a></td>
+          <td class="sub-content-page"><a href="{{ post.url }}">{{ post.data.title }}</a></td>
+          <td class="sub-content-page">{{ post.data.date  | readablePostDate }}{% if post.data.lastmod %}<br><strong>Updated</strong>: {{ post.data.lastmod | readablePostDate}}{% endif %}</td>
           {% if post.data.description %}
           <td class="sub-content-page">{{ post.data.description }}</td>
           {% else %}

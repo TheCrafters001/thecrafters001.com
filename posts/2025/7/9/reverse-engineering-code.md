@@ -2,6 +2,7 @@
 title: Reverse Engineering Ghost Toolbox
 description: My first attempt at trying to reverse engineer a program
 date: 2025-07-09T20:41:39.309Z
+lastmod: 2026-01-08T06:43:46.773Z
 tags:
     - post
 layout: "layout/post.html"
