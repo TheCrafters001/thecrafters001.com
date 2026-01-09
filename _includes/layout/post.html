@@ -18,6 +18,27 @@
                 <h3>{{ date | readablePostDate }}</h3>
                 <small>{{ description }}</small>
                 <hr>
+
+
+                {% if heroimg %}
+                    <table style="max-width: 900px !important;">
+                        <thead>
+                            <tr>
+                                <th class="top-bar">Hero Image</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="sub-content-page"><img src="{{ heroimg }}" width="100%" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                {% else %}
+                    <!-- Empty -->
+                {% endif %}
+
+
                 {{ content }}
             </td>
         </tr>
