@@ -1,0 +1,32 @@
+---
+title: Game Jolt - 'Final Post for now, I swear'
+date: 2026-01-13T09:06:10.000Z
+tags:
+    - post
+layout: "layout/post.html"
+comments: false
+---
+
+{% quote %}
+This post is originally found on Game Jolt, and I use language that refers to the site directly. If you want to view the post on the site, you can do so <a href="https://gamejolt.com/p/final-post-for-now-i-swear-6vwjguiq">here</a>.
+{% endquote %}
+
+This site has changed a lot in the almost 9 years (man that makes me feel old) I have been here. Seeing it evolve into what it is today certainly was... Something.
+
+I'll be honest, I only really use this site on occasion nowadays, making sure my TF2 community is in a decent spot, and moving on. I just don't really get the same... Spark... That this website used to give me.
+
+I used to log in every day, seeing new games and demos that always made me strive to make a game myself. And while I did make a couple games that are now lost to time, I always loved seeing what others were working on!
+
+Now, though, this website feels like... Well, any other social platform out there. The one feature that makes this site unique, in my opinion, is the Communities, which allows people to come together over a shared interest, but did you know that such a feature never exist? Did you know that a lot of the features now, never existed? Heck, what you are reading now, this post and everything in it, are just a glorified version of a game page's Changelog system.
+
+Yeah, the post system is not new, in fact game developers used game change logs to make actual change logs and updates for games, which you can still do, but it used to notify people who followed the game that the developer made something new.
+
+Now? Nothing. This site has become less gaming focused, and more social focused. Don't get me wrong, I'm not saying this is a bad thing, but I don't really feel the 'game' in 'Game Jolt' anymore. Heck I don't even feel the 'jolt'. I haven't in a long time. Ever since my friend started using this site, and since abandoned it, this site hasn't felt the same.
+
+I know I'm most likely gonna get shadow banned for this, but I will be honest. The moderation here isn't great, and hasn't been ever since Communities were created. It is incredibly easy to get mass reported and banned for no reason other than a group of people hate your guts for some reason, and to top it off, the one thing I ever wanted on this site was to get Verified. Now? Verification is only given to staff or people who represent big games or companies.
+
+Now, I'm not saying that the people who run this site aren't doing their job. What I am saying is, this site feels different - this site IS different, than what it used to be. But despite my gripes with the site, I still after all this time come back. Why? It feels like a home. A place I once lived. I come back to try and chase that feeling of being welcomed. That feeling of wanting to play games, to discover games, to know what indie was all about! Now? It is just another social media platform that is like any other one out there.
+
+Am I gonna abandon this site? No. But I sure don't feel the same way I did when I first made this account on April fools of 2018.
+
+If you want to discuss with me in the comments, I am more than willing to discuss. Just know I'm not trying to put this site in a bad light, I'm just recounting my experience.
