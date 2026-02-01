@@ -3,6 +3,11 @@
    Custom CSS may be added as well.
    https://web.archive.org/web/20200216231829/http://www.phpeasystep.com/phptu/12.html */
 
+/* Font. */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+/* // <weight>: Use a value from 200 to 900
+// <uniquifier>: Use a unique and descriptive class name */
+
 table {
     width: 90%;
     border: 0;
@@ -98,18 +103,10 @@ body {
     padding-bottom: 35px;
     background-color: #292929;
 
-    /* I copied the font-family code from https://firealpaca.com/en/get/. unsure if it will work all that great */
-
-    font-family: "メイリオ",
-                "ＭＳ Ｐゴシック",
-                "Meiryo",
-                "ヒラギノ角ゴ Pro W3",
-                "Hiragino Kaku Gothic Pro",
-                Osaka,
-                verdana,
-                arial,
-                clean,
-                sans-serif;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 
