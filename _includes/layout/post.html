@@ -15,7 +15,7 @@
         <tr>
             <td class="content-page correct-spacing" id="content" colspan="6">
                 <h1>{{ title }}</h1>
-                <h3>{{ date | readablePostDate }}{% if lastmod %} | <strong>Updated</strong>: {{ lastmod | readablePostDate }}{% endif %}</h3>
+                <h3>By: {{ author }} | {{ date | readablePostDate }}{% if lastmod %} | <strong>Updated</strong>: {{ lastmod | readablePostDate }}{% endif %}</h3>
                 <small>{{ description }}</small>
                 <hr>
 

@@ -6,5 +6,7 @@ tags:
     - post
 layout: "layout/post.html"
 comments: true
+
+author: "TheCrafters001"
 ---
 Heya! Just wanted to let people know that I am going through and updating some of the stylesheet around my site to make a more cohesive dark mode. That means some elements of the site are bound to look broken. I do apologise for anything that may be difficult to read.

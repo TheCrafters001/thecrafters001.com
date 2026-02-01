@@ -7,6 +7,8 @@ tags:
     - post
 layout: "layout/post.html"
 comments: true
+
+author: "TheCrafters001"
 ---
 
 From here-on-out, all my notes will be using <code class="language-markup">/notes/ </code> as the url instead of <code class="language-markup">/posts/ </code>.

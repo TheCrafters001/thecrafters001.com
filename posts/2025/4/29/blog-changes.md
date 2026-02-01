@@ -6,6 +6,8 @@ tags:
     - post
 layout: "layout/post.html"
 comments: true
+
+author: "TheCrafters001"
 ---
 
 I have wanted to post thinges here for a long time that are kinda outside the realm of "blog" style posts. So I have decided to change this from "Blog" to "Notebook" or something like that. 

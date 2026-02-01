@@ -7,6 +7,8 @@ tags:
     - post
 layout: "layout/post.html"
 comments: true
+
+author: "TheCrafters001"
 ---
 
 {% quote %}
