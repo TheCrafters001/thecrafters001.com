@@ -37,7 +37,40 @@ permalink: "notes/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumbe
 </table>
 
 <table  style="max-width: 1000px !important;">
-  <thead><tr class="footer">{%- for pageEntry in pagination.pages %}<td class="top-bar"><a href="{{ pagination.hrefs[ forloop.index0 ] }}"{% if page.url == pagination.hrefs[ forloop.index0 ] %} aria-current="page"{% endif %}>Page {{ forloop.index }}</a></td>{%- endfor %}</tr></thead>
+    <thead>
+        <tr class="footer">
+
+            <!-- Update Pagination,
+                 If Prev/Next page don't exist,
+                 don't include <a> element -->
+
+            <!-- Make sure width is 33% to make them even -->
+            {% if pagination.href.previous %}
+                <td class="top-bar" width="33%">
+                    <a href="{{ pagination.href.previous }}">Previous Page</a>
+                </td>
+            {% else %}
+                <td class="top-bar" width="33%">
+                    Previous Page
+                </td>
+            {% endif %}
+
+            <!-- Always Include -->
+            <td class="top-bar" width="33%">
+                <a href="/notes/">First Page</a>
+            </td>
+
+            {% if pagination.href.next %}
+                <td class="top-bar" width="33%">
+                    <a href="{{ pagination.href.next }}">Next Page</a>
+                </td>
+            {% else %}
+                <td class="top-bar" width="33%">
+                    Next Page
+                </td>
+            {% endif %}
+        </tr>
+    </thead>
 </table>
 
 <table style="max-width: 700px !important; margin-top: 15px; margin-bottom: 15px;">
