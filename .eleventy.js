@@ -7,6 +7,10 @@ const { DateTime } = require("luxon");
 // RSS
 const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
 
+// git commit
+const childProcess = require('child_process');
+
+
 // Config
 module.exports = function (eleventyConfig) {
 	// Passthrough
@@ -34,6 +38,18 @@ module.exports = function (eleventyConfig) {
 
 	// Blockquote Alert
 	eleventyConfig.addPairedShortcode('quotewarning', (text) => `<blockquote class="quote warning">${text}</blockquote>`);
+
+	// Original snippet by https://github.com/BluePraise/magaliechetrit.com	
+	// Add a shortcode to get the latest git commit date
+    eleventyConfig.addShortcode('lastCommitHash', function () {
+        const lastCommitHash = childProcess.execSync(`git rev-parse --short HEAD`).toString().trim();
+        return lastCommitHash;
+    });
+	// Modified version of above shortcode.
+    eleventyConfig.addShortcode('lastLongCommitHash', function () {
+        const lastCommitHash = childProcess.execSync(`git rev-parse HEAD`).toString().trim();
+        return lastCommitHash;
+    });
 
 	// End Shortcode
 
