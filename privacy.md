@@ -4,14 +4,14 @@ title: "Privacy"
 permalink: "privacy.html"
 ---
 
-### Definitions
+## Definitions
  * User (Refering to a person trying to access a page or service.)
  * Guest/Guests (Refering to someone or a group of people who uses the public facing services that do not require an account.)
  * Registerd User (Refering to a user who has an account registered in my services.)
 
-### Policy
+## Policy
 
-#### Unregistered Users and Registered Users
+### Unregistered Users and Registered Users
 By default, as in for both guests and registered users who connect to this website, you are providing the following information:
  * IP Address used to connect
  * The user-agent of the application or browser used to connect
@@ -32,7 +32,13 @@ GoatCounter is a public facing, open-source analytics platform that promises no 
 
 All the data displayed on the listed website above is all the data I have. All data is anonymized. All data past 31 days of age is deleted. You may view the GoatCounter Privacy Policy here: [https://www.goatcounter.com/help/privacy](https://www.goatcounter.com/help/privacy)
 
-#### Registered Users Only
+### Arivertisements
+
+More information on Arivertisements can be found here: [https://ad.ari.lt/](https://ad.ari.lt/).
+
+In short, these are not real advertizements, I don't make revenue off of them and it is designed with security and privacy in mind.
+
+### Registered Users Only
 There is an exception for those using my private services/any user registered to <code class="language-markup">thecrafters001.com</code>'s services. We will store all information provided that is required for the functionality of the service, such as a username and password, as well as any addition or optional information the registered user provides the server, such as an email address or connections to third party services.
 
 The services I provide try to follow the [GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation) (General Data Protection Regulation) for storing and managing personal data, and allow for complete deletion of all personal data you provide to me, should you be a registered user, whenever possible.
