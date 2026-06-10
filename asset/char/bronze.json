@@ -1,0 +1,14 @@
+{
+    "name": "Bronze",
+    "expression": {
+        "happy": "/asset/char/img/bronze/happy.png",
+        "sad": "/asset/char/img/bronze/sad.png",
+        "angry": "/asset/char/img/bronze/angry.png",
+        "worried": "/asset/char/img/bronze/worried.png",
+        "neutral": "/asset/char/img/bronze/neutral.png",
+        "exclaim": "/asset/char/img/bronze/exclaim.png",
+
+        "failsafe": "/asset/char/img/bronze/qmark.png",
+        "failsafe_tmp": "https://placehold.co/150/png?text=??????"
+    }
+}
