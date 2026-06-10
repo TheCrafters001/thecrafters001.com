@@ -47,7 +47,7 @@ module.exports = function (eleventyConfig) {
             <td class="sub-content-page" colspan="1">${content}</td>
         </tr>
     </tbody>
-</table>`;
+</table><br>`;
 	});
 
 	// Inverse of above.
@@ -70,7 +70,7 @@ module.exports = function (eleventyConfig) {
 			<td class="sub-content-page" colspan="1" width="150px" ><img src="${charImg}" alt="${charName} is ${expression}" style="transform:scaleX(-1);"></td>
         </tr>
     </tbody>
-</table>`;
+</table><br>`;
 	});
 
 	// Modified version of https://bnijenhuis.nl/notes/dates-in-eleventy/
