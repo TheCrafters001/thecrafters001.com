@@ -6,7 +6,7 @@ tags:
 layout: "layout/post.html"
 comments: false
 
-author: "Bronze the Synth"
+author: "Bronze"
 ---
 
 {% charTalk "bronze" "exclaim" %}
